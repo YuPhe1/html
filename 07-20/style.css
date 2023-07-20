@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+* {
+    font-family: 'Orbit', sans-serif;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;	
+}

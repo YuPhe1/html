@@ -60,12 +60,12 @@
                     </div>
                     <div class="col">
                         <h5>{{title}}</h5>
-                        <div class="my-3">저자: {{authors}}</div>
-                        <div class="my-3">{{getPrice price}}원</div>
-                        <div class="my-3">출반사: {{publisher}}</div>
-                        <div class="my-3">출판일: {{datetime}}</div>
-                        <div class="my-3">ISBN: {{isbn}}</div>
-                        <div class="my-3"><a href="{{url}}">이동</a></div>
+                        <div class="my-2">저자: {{authors}}</div>
+                        <div class="mb-2">{{getPrice price}}원</div>
+                        <div class="mb-2">출반사: {{publisher}}</div>
+                        <div class="mb-2">출판일: {{datetime}}</div>
+                        <div class="mb-2">ISBN: {{isbn}}</div>
+                        <div class="mb-2"><a href="{{url}}">이동</a></div>
                     </div>
                 </div>
                 <hr>
@@ -144,7 +144,7 @@
                 const html_book = temp_book(data);
                 $("#div_book").html(html_book);
 
-                const last = Math.ceil(data.meta.pageable_count / 12)
+                const last = Math.ceil(data.meta.pageable_count / 12);
                 $("#page").html(`<b>${page} / ${last}</b>`);
 
                 if(page == 1){
